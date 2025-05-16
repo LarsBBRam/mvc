@@ -7,7 +7,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        var controller = new TaskController(new TaskContext(), new ViewGenerator());
-        controller.Run();
+        var app = new TaskController(new TaskContext(), new ViewGenerator());
+        app.Run();
     }
 }
